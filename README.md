@@ -35,8 +35,7 @@ pi install npm:pi-sdsc-vllm --local
 ### Codex
 
 No support for local-only plugins. Plugins have to be installed at the user level.
-Then they have to be disabled at the user level and re-enabled at the project level.
-For best results it is best to add the plugin add command in an init script.
+Codex has trouble installing plugins before logging in.
 
 ## Adding skills
 
