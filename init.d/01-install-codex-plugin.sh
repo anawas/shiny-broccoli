@@ -1,1 +1,5 @@
+#!/usr/bin/env bash
+if [ -n "$CODEX_HOME" ]; then
+  mkdir -p "$CODEX_HOME"
+fi
 codex plugin add build-web-data-visualization@openai-curated
