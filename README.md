@@ -49,5 +49,5 @@ Skills can be added to `.pi/skills`
 
 ### Codex
 
-Skills can be added to `.agents/skills`
+Skills can be added to `.codex/skills`
 

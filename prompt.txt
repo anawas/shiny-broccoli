@@ -1,0 +1,3 @@
+id like you to create an interactive visualisation (bar plot) with this data in temperature_agg.csv. create a script visualise_barplot-temperature_agg.py. save the output as barplot-temperature_agg.html.
+I want "mean" to represent the values, "std" the error bars. Each error bar should have a tooltip that includes these info as well as the count. Use plotly.
+Use the Design recommendations in @design/UI_KIT_GUIDELINES.md to style the plot. add the surface type to the x-axis, altitude/aspect to legend and temperature to the y-axis. merge High/East, High/West, Mid/West, ... into 6 categories not 12
