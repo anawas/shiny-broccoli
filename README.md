@@ -18,6 +18,9 @@ This by reading the specific folders that contain custom configuration for each 
 When we find any of the folders we will include them in your Renku session.
 This should allow you to install skills and/or plugins.
 
+NOTE: For codex you have to enable "Device flow" for logging in at 
+https://chatgpt.com/#settings/Security.
+
 ## Adding plugins
 
 ### Claude
