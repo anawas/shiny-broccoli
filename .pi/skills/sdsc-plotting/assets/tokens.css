@@ -1,0 +1,24 @@
+/* SDSC chart colour tokens.
+ * Copy into the project's global stylesheet, then reference these variables
+ * from chart code (D3, Chart.js, Observable Plot, etc.).
+ * Chart colours are NOT interface colours -- in a chart, colour encodes data.
+ * Categorical palette is ordered most-distinguishable-first; keep to <= 5 series.
+ */
+
+:root {
+  --chart-cat-1: #26235c;  /* SDSC dark blue */
+  --chart-cat-2: #73a235;  /* green, darkened for contrast on white */
+  --chart-cat-3: #b34a00;  /* orange */
+  --chart-cat-4: #56b4e9;  /* sky blue */
+  --chart-cat-5: #cc79a7;  /* pink */
+  --chart-muted: #b8b8b8;  /* context series in focus/highlight charts */
+  --chart-grid:  #e5e5e5;  /* light grey gridlines */
+}
+
+.dark {
+  /* Lightened so series stay visible on dark backgrounds; prefer <= 4 series. */
+  --chart-cat-1: #8a94c9;
+  --chart-cat-2: #90ca42;
+  --chart-cat-3: #e07b39;
+  /* cat-4 / cat-5 unchanged */
+}
