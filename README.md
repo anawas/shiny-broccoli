@@ -18,7 +18,37 @@ This by reading the specific folders that contain custom configuration for each 
 When we find any of the folders we will include them in your Renku session.
 This should allow you to install skills and/or plugins.
 
-NOTE: Out-of-the box support for skills in `codex` is currently not available. 
-We currently do not pick up the `.agents` folder that is expected by `codex`.
-You can bypass this limitation by adding an init script that will copy the skills
-from another location into `.agents/skills` so that `codex` can see the skills.
+## Adding plugins
+
+### Claude
+
+```
+claude plugin install superpowers@claude-plugins-official --scope project
+```
+
+### Pi
+
+```
+pi install npm:pi-sdsc-vllm --local
+```
+
+### Codex
+
+No support for local-only plugins. Plugins have to be installed at the user level.
+Then they have to be disabled at the user level and re-enabled at the project level.
+For best results it is best to add the plugin add command in an init script.
+
+## Adding skills
+
+### Claude
+
+Skills can be added to `.claude/skills/`
+
+### Pi
+
+Skills can be added to `.pi/skills`
+
+### Codex
+
+Skills can be added to `.agents/skills`
+
